@@ -1,0 +1,1 @@
+This is a mock up of personal website. This project will be later transfered into a MVC .Net project. 

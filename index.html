@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, intial-scale=1.0">
+    <title>Gabriel Gutierrez</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav__container">
+
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about_container" class="navbar__links"> ABOUT </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#tech_container" class="navbar__links"> TECH </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#art_container" class="navbar__links"> ART </a>
+                </li>
+                <li class="navbar__item">
+                    <a a href="#contact_container" class="navbar__links"> CONTACT </a>
+                </li>
+
+            </ul>
+
+            <hr>
+        </div>
+
+    </nav>
+
+    <div class="main">
+        <div class="main_container">
+            <div class="main_content"></div>
+            <h1> GABRIEL D. GUTIERREZ </h1>
+            <h6>I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h6>
+        </div>
+    </div>
+
+    <div class="about_container" id="about_container">
+        <div class="row">
+            <div class="aboutlegend-col">
+                <h3>Careers</h3>
+                <br>
+                <ul class="careers_li">
+                    <li class="aboutme_nav"><a class="aboutme_link" id="aboutme_link"
+                            onclick="reWrite(aboutTitle,aboutBlurb)">
+                            ABOUT ME </a>
+                    </li>
+                    <li class="weather_nav"><a class="weather_link" id="weather_link"
+                            onclick="reWrite(weatherTitle,weatherBlurb)">
+                            WEATHER FORECASTER </a>
+                    </li>
+                    <li class="management_nav"><a class="career_link" onclick="reWrite(mngTitle,mngBlurb)">
+                            MANAGEMENT </a></li>
+                    <li class="asst_nav"><a class="career_link" onclick="reWrite(dsgTitle,dsgBlurb)"> DESIGN
+                            ASSISTANT </a></li>
+                </ul>
+            </div>
+            <div class=" aboutme-col">
+                <h2><span class="aboutmeHeader" id="aboutmeHeader">About Me</span></h2>
+                <p><br> <span id="aboutmeblurbs">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum
+                        dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia
+                        deserunt mollit anim id est laborum."</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech_container" id="tech_container">
+        <div class="tech_row">
+            <div class="techlegend-col">
+                <h3>Projects</h3>
+                <ul class="projects_nav">
+                    <li class="stable_nav"><a class="stable_link" id="stable_link">Stable Match Algorithm</a></li>
+                    <li class="cage_nav"><a class="cage_link" id="cage_link">Cage Workout App</a></li>
+
+                </ul>
+                <br>
+                <video width="450" height="300" controls>
+                    <source src="/images/MARIAH WORMELY.mp4">
+                </video>
+            </div>
+            <div class="project-col">
+                <h2><span class="project_title">Project title</span></h2>
+                <p><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="art_container" id="art_container">
+        <div class="art_col">
+            <div class="artdescp_col">
+                <h3> Photography </h3>
+                <p><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."</p>
+            </div>
+            <div class="slideshow_container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="/images/_GDG0078.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="/images/_GDG0455.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/images/_GDG3184.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+                <div class="slideshow_control">
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_container" id="contact_container">
+        <formaction=”mailto:gdgutier@icloud.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+            <fieldset>
+                <legend>
+                    <h3>CONTACT ME </h3>
+                </legend>
+
+                <input type="text" placeholder="First and Last Name"></input><br>
+                <input type="email" placeholder="Email Address"></input><br>
+                <input type="text" class="inputText" placeholder="Comments"></input>
+                <input type="submit" value="Send">
+            </fieldset>
+            </form>
+    </div>
+
+
+
+
+    <script src='app.js'></script>
+</body>
+
+</html>
